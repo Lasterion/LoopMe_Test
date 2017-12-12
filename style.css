@@ -1,0 +1,448 @@
+#main_container,
+#main_container>a,
+#twister, 
+#add, 
+#add+div,
+#lightborder,
+#flash_camera,
+#iframe,
+.under_the_lid, 
+#flashing_memory_card, 
+#flashing_memory_card>div, 
+#chuck_memory_card,
+#sprite,
+#phrases,
+#logo,
+#taglines,
+.tagline,
+#drag_now,
+#buy_now,
+#close_add,
+#rain,
+.dropclass{
+	position: absolute;
+}
+
+#main_container{
+	
+	width: 970px;
+	height: 250px;
+	border: 1px solid black;
+	overflow:hidden;
+}
+
+#main_container>a{
+	display: block;
+	width: inherit;
+	height: inherit;
+	z-index: 100;
+}
+
+#twister{
+	display: none;
+	width: inherit;
+	height: inherit;
+}
+
+#add{
+	width: inherit;
+	height: inherit;
+}
+
+#add+div{
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	height: 20px;	
+	width: 200px;	
+	top:120px;
+	left: 685px;
+	z-index: 200;
+}
+
+#range{
+	-webkit-appearance: none;
+	background-color: #ccc;
+	width: 200px;
+	height: 1px;
+	border: none;
+	cursor:move;
+}
+
+#range:focus{
+	outline: none;
+}
+
+#range::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background: black;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+#lightborder{
+	width: inherit;
+	height: inherit;
+	background-image: url(images/970x250_highlights.png);
+	background-position: -23px center;
+	pointer-events: none;
+	z-index: 200;
+}
+
+#flash_camera{
+	display: none;
+	opacity: 0;
+	z-index: 200;
+	width: 300px;
+	height: 300px;
+	top:-68px;
+	left:225px;
+	background-image: url(images/flash.png);
+	z-index: 100px;
+	-webkit-transform-origin: center center;
+	-ms-transform-origin: center center;
+	transform-origin: center center;
+	-webkit-animation: flash_camera .35s linear 1;
+	animation: flash_camera .35s linear 1;
+}
+
+#iframe{
+	display:none;
+	cursor: default;
+    margin-left: 347px;
+	margin-top: 25px;
+	z-index: 200;
+}
+
+.under_the_lid{
+	background-image: url(images/internals.png);
+	background-position: -22px 0px;
+	top:1px;
+	width: inherit;
+	height: inherit;
+	display: none;
+}
+
+#flashing_memory_card{
+	left : 349px;
+	top: 152px;
+	width: 56px;
+	height: 44px;
+	overflow:hidden;
+}
+
+#chuck_memory_card{
+	background-image: url(images/internals_frame.png);
+	width: inherit;
+	height: inherit;
+	background-position: -22px 0px;
+	z-index: 1;
+}
+
+#flashing_memory_card>div{
+	display: none;
+	width: 38px;
+	height: 80px;
+	top:-15px;
+	background-image: url(images/card_highlight.png);
+	background-position: center center;
+	-webkit-transform: translate(-40px) rotate(-45deg);
+	-ms-transform: translate(-60px) rotate(-45deg);
+	transform: translate(-60px) rotate(-45deg);
+	-webkit-animation: glare .3s 2;
+	animation: glare .3s 2;
+}
+
+#sprite{
+	width: 514px;
+	height: 221px;
+	margin-left: 270px;
+	margin-top: 15px;
+	background-image: url(images/phone/phone_sprite.png);
+	background-position: left 0px;
+}
+
+.emersion{
+	display: block;
+	-webkit-animation: emersion 1s 1;
+	animation: emersion 1s 1;
+}
+
+#phrases{
+	width: inherit;	
+	height: inherit;
+}
+
+#logo{
+	top:25px;
+	left: 25px;
+	width: 202px;	
+	height: 46px;
+	background: url(images/T_SamsungLogo.png) no-repeat 2px 0px,
+				url(images/T_GalaxyLogo.png) no-repeat 0% 100%;
+	background-size: 65px 12px, 202px 34px;
+}
+
+#taglines{
+	width: 220px;
+	height: 80px;
+	top:146px;
+	left:25px;
+	padding-left: 3px;
+}
+
+.tagline{
+	display:none;
+	bottom: 0px;
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.ones{
+	display: inline;
+}
+
+#drag_now{
+	display: none;
+	left:830px;
+	top:27px;
+}
+
+#drag_now>span{
+	font-size: 11px;
+	font-weight: bold;
+	font-family: 'Arial', sans-serif;
+	text-transform: uppercase;
+}
+
+#buy_now{
+	display: none;
+	top:196px;
+	left:835px;
+	width: 98px;	
+	height: 32px;	
+	background: url(images/T_CTA.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+#close_add{
+	z-index: 999;
+	width: 74px;
+	height: 28px;
+	right:0px;
+	cursor: pointer;
+}
+
+#close_add>span{
+	font-family: 'Arial', sans-serif;
+	font-size: 11px;
+	line-height: 28px;
+	text-decoration: underline;
+	position: relative;
+	bottom: 9px;
+	left:4px;
+}
+
+#rain{
+	width: 520px;
+	height: 250px;
+	left: 260px;
+	overflow: hidden;
+	z-index: 99;
+}	
+
+.dropclass{
+	opacity: 0;
+	-webkit-transform: translate3d(0px, 0px, 1000px);
+	transform: translate3d(0px, 0px, 1000px);
+	background-size: contain;
+	-webkit-animation: raindrop 4s cubic-bezier(.72,.02,.84,.64) 1;
+	animation: raindrop 4s cubic-bezier(.72,.02,.84,.64) 1;
+}
+
+.dropclass1{
+	width: 30px;
+	height: 28px;
+	background-image: url(images/raindrop_1.png);
+}
+.dropclass2{
+	width: 15px;
+	height: 23px;
+	background-image: url(images/raindrop_2.png);
+}
+.dropclass3{
+	width: 22px;
+	height: 19px;
+	background-image: url(images/raindrop_3.png);
+}
+.dropclass4{
+	width: 15px;
+	height: 24px;
+	background-image: url(images/raindrop_4.png);
+}
+
+/*Анимаия появления снизу блока прокрутки телефона*/
+@-webkit-keyframes twister{
+	0%{
+		-webkit-transform:translateY(-270px);
+		transform:translateY(-270px);
+	}
+	100%{
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
+
+@keyframes twister{
+	0%{
+		-webkit-transform:translateY(270px);
+		transform:translateY(270px);
+	}
+	100%{
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
+
+/*Анимация для блика карты памяти*/
+@-webkit-keyframes glare{
+	0%{
+		-webkit-transform: rotate(-45deg) translateX(-60px);
+		transform: rotate(-45deg) translateX(-60px);
+	}
+	100%{
+		-webkit-transform: rotate(-45deg) translateX(40px);
+		transform: rotate(-45deg) translateX(40px);
+	}
+}
+
+@keyframes glare{
+	0%{
+		-webkit-transform: rotate(-45deg) translateX(-60px);
+		transform: rotate(-45deg) translateX(-60px);
+	}
+	100%{
+		-webkit-transform: rotate(-45deg) translateX(40px);
+		transform: rotate(-45deg) translateX(40px);
+	}
+}
+
+/*Анимация для плавного появления*/
+@-webkit-keyframes emersion{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes emersion{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+/*Анимация для вспишки камеры*/
+@-webkit-keyframes flash_camera{
+	0%{
+		opacity: 0;
+		-webkit-transform: scale(0) rotate(-35deg);
+		transform: scale(0) rotate(-35deg);
+	}
+	30%{
+		opacity: 1;
+	}
+	70%{
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform: scale(3) rotate(155deg);
+		transform: scale(3) rotate(155deg);
+		opacity: 0;
+	}
+}
+
+@keyframes flash_camera{
+	0%{
+		opacity: 0;
+		-webkit-transform: scale(0) rotate(-35deg);
+		transform: scale(0) rotate(-35deg);
+	}
+	30%{
+		opacity: 1;
+	}
+	70%{
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform: scale(3) rotate(155deg);
+		transform: scale(3) rotate(155deg);
+		opacity: 0;
+	}
+}
+
+/*Анимация для капель дождя*/
+@-webkit-keyframes raindrop{
+	0%{
+		opacity: 1;
+		-webkit-transform: scale(2) translateY(0px);
+		transform: scale(2.5) translateY(0px);
+	}
+	4%{
+		-webkit-transform: scale(1) translateY(0px);
+		transform: scale(1) translateY(0px);
+	}
+	5%{
+		-webkit-transform: scale(1) translateY(0px);
+		transform: scale(1.5) translateY(0px);
+	}
+	7%{
+		-webkit-transform: scale(1) translateY(0px);
+		transform: scale(1) translateY(0px);
+	}
+	99%{
+		opacity: 1;
+		-webkit-transform: scale(0.2) translateY(250px);
+		transform: scaleX(0.2) translateY(250px);
+	}
+	100%{
+		-webkit-transform: scale(0.2) translateY(250px);
+		transform: scaleX(0.2) translateY(250px);
+		opacity: 0;
+	}
+}
+@keyframes raindrop{
+	0%{
+		opacity: 1;
+		-webkit-transform: scale(2) translateY(0px);
+		transform: scale(2.5) translateY(0px);
+	}
+	4%{
+		-webkit-transform: scale(1) translateY(0px);
+		transform: scale(1) translateY(0px);
+	}
+	5%{
+		-webkit-transform: scale(1) translateY(0px);
+		transform: scale(1.5) translateY(0px);
+	}
+	7%{
+		-webkit-transform: scale(1) translateY(0px);
+		transform: scale(1) translateY(0px);
+	}
+	99%{
+		opacity: 1;
+		-webkit-transform: scale(0.2) translateY(250px);
+		transform: scaleX(0.2) translateY(250px);
+	}
+	100%{
+		-webkit-transform: scale(0.2) translateY(250px);
+		transform: scaleX(0.2) translateY(250px);
+		opacity: 0;
+	}
+}
